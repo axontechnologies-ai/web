@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunova | Nova-1 — первая многоразовая ракета</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0c10;
+            font-family: -apple-system, 'Segoe UI', 'Courier New', monospace;
+            color: #e6edf3;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* шапка — без навигации */
+        .header {
+            border-bottom: 1px solid #2a3a44;
+            padding-bottom: 1.2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            color: #b3e4ff;
+        }
+
+        .logo p {
+            font-size: 0.75rem;
+            color: #7f9aa5;
+            letter-spacing: 1px;
+        }
+
+        /* главный блок с ракетой */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            background: #0f1419;
+            border-left: 4px solid #3f9ec0;
+            padding: 2rem 1.8rem;
+        }
+
+        .hero-text {
+            flex: 2;
+        }
+
+        .hero-text h2 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            color: #cceeff;
+            margin-bottom: 1rem;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-text .badge {
+            display: inline-block;
+            background: #1f3e48;
+            padding: 0.2rem 0.8rem;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            color: #9fd3f0;
+        }
+
+        .hero-text p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #cddfe6;
+        }
+
+        .hero-stats {
+            flex: 1;
+            background: #080e12;
+            padding: 1.2rem;
+            border: 1px solid #2a4a58;
+        }
+
+        .hero-stats h3 {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            color: #9acfdf;
+            border-bottom: 1px solid #2e5c6b;
+            display: inline-block;
+        }
+
+        .stat-item {
+            margin-bottom: 0.8rem;
+        }
+
+        .stat-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            color: #7f9fae;
+        }
+
+        .stat-value {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #e0f0fa;
+        }
+
+        /* секция заголовок */
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin: 2.5rem 0 1.2rem 0;
+            color: #b3deef;
+            border-left: 3px solid #3f9ec0;
+            padding-left: 0.8rem;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-card {
+            background: #0f151b;
+            border: 1px solid #253b44;
+            padding: 1.2rem;
+            flex: 1 1 200px;
+        }
+
+        .feature-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: #d0ecff;
+        }
+
+        .feature-card p {
+            font-size: 0.85rem;
+            color: #b2cad6;
+        }
+
+        /* таблица характеристик */
+        .specs {
+            background: #0c1116;
+            border: 1px solid #2b4955;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 1rem;
+        }
+
+        .specs td {
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid #1f3b44;
+            font-size: 0.9rem;
+        }
+
+        .specs td:first-child {
+            font-weight: 600;
+            width: 40%;
+            color: #b3d9ec;
+        }
+
+        .specs tr:last-child td {
+            border-bottom: none;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #223d48;
+            font-size: 0.7rem;
+            color: #6e919f;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- шапка без навигации -->
+    <div class="header">
+        <div class="logo">
+            <h1>LUNOVA</h1>
+            <p>доступ к орбите • многоразовые системы</p>
+        </div>
+    </div>
+
+    <!-- главный блок: Nova-1 -->
+    <div class="hero">
+        <div class="hero-text">
+            <div class="badge">первая ступень • полностью многоразовая</div>
+            <h2>NOVA-1</h2>
+            <p>Nova-1 — первая ракета-носитель Lunova, спроектированная для возвращения первой ступени и быстрого повторного использования. Стартовая платформа для спутников, научных миссий и коммерческой доставки грузов на низкую околоземную орбиту.</p>
+            <p>Разработана с акцентом на надёжность, автоматическую посадку и снижение стоимости запуска. Первый полёт запланирован на 2040 год.</p>
+        </div>
+        <div class="hero-stats">
+            <h3>быстрые факты</h3>
+            <div class="stat-item">
+                <div class="stat-label">высота</div>
+                <div class="stat-value">45 м</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">стартовая масса</div>
+                <div class="stat-value">~220 т</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">полезная нагрузка (НОО)</div>
+                <div class="stat-value">3 т</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">первая ступень</div>
+                <div class="stat-value">возвращаемая, многоразовая</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- особенности ракеты -->
+    <div>
+        <div class="section-title">почему Nova-1</div>
+        <div class="features">
+            <div class="feature-card">
+                <h4>возвращение</h4>
+                <p>Первая ступень совершает вертикальную посадку на морскую платформу или наземный комплекс. Автоматическая система наведения.</p>
+            </div>
+            <div class="feature-card">
+                <h4>интеллект</h4>
+                <p>Бортовая система AvronCore управляет тягой, аэродинамикой и траекторией в реальном времени.</p>
+            </div>
+            <div class="feature-card">
+                <h4>универсальность</h4>
+                <p>Подходит для групповых запусков спутников, научных аппаратов и демонстрационных миссий.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- таблица характеристик Nova-1 -->
+    <div>
+        <div class="section-title">характеристики ракеты Nova-1</div>
+        <table class="specs">
+            <tr><td>Стартовая масса</td><td>~220 т</td></tr>
+            <tr><td>Высота</td><td>45 м</td></tr>
+            <tr><td>Диаметр</td><td>3.7 м</td></tr>
+            <tr><td>Полезная нагрузка (на НОО)</td><td>3 т</td></tr>
+            <tr><td>Первая ступень</td><td>Возвращаемая, многоразовая</td></tr>
+            <tr><td>Тяга (1 ст., земля)</td><td>2.25 МН</td></tr>
+            <tr><td>Тяга (1 ст., вакуум)</td><td>2.55 МН</td></tr>
+            <tr><td>УИ (1 ст.)</td><td>285 с / 315 с</td></tr>
+            <tr><td>УИ (2 ст.)</td><td>340 с</td></tr>
+            <tr><td>Время работы (1 ст.)</td><td>160 с</td></tr>
+            <tr><td>Время работы (2 ст.)</td><td>380 с</td></tr>
+        </table>
+    </div>
+
+    <!-- подвал -->
+    <div class="footer">
+        <p>Lunova — космическая технологическая компания. Разработка многоразовых ракет-носителей и интеллектуальных систем управления полётом.</p>
+        <p style="margin-top: 0.4rem;">© 2026 Lunova | Nova-1 — первая ракета семейства Nova</p>
+    </div>
+</div>
+</body>
+</html>
